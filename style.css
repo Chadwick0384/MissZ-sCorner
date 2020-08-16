@@ -1,0 +1,177 @@
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --grid: 1fr;
+}
+
+body {
+    background: radial-gradient(#525252, #131313);
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    min-height: 90vh;
+}
+
+header {
+    padding: 1em;
+    text-align: center;
+}
+
+.nav {
+    list-style: none;
+    overflow: hidden;
+    background-color: #1d1b1b;
+    padding-right: 30px;
+}
+
+
+
+.nav_link {
+    text-decoration: none;
+    color: #fff;
+    word-spacing: 2px;
+    letter-spacing: 4px;
+    text-align: center;
+    line-height: 1.7;
+    
+}
+
+.nav_list-item1 {
+    font-size: 60px;
+    font-family: 'Crushed', cursive;
+  
+}
+
+nav a:hover {
+    color: orchid;
+}
+
+
+.main-learn {
+    background-image: url(https://misszteachingwebsite.s3.us-east-2.amazonaws.com/916854.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 50vh;
+    max-width: 100%;
+    background-position: top;
+    margin-top: 30px;
+
+}
+
+h1 {
+    color: blanchedalmond;
+}
+
+
+
+
+
+/*World History*/
+.grid-layout {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 2.0rem;
+    justify-content: center;
+    padding: 30px;
+}
+
+.grid-layout div {
+    background-color: blanchedalmond;
+}
+
+.projects {
+    max-width: 100%;
+}
+
+h1  {
+    text-align: center;
+    font-size: 40px;
+}
+
+.projects h4 {
+    text-align: center;
+    padding-right: 35px;
+    font-size: 30px;
+}
+
+
+.projects img {
+    max-width: 400px;
+    max-height: 500px;
+    margin: 0, auto;
+    padding-right: 40px;
+    padding-top: 15px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ a {
+    color: rgb(8, 8, 8);
+}
+
+
+
+/*Contact Me*/
+.grid-layout2 {
+    display: grid;
+    grid-template-columns: 3.0fr 2fr;
+    grid-gap: 3rem;
+    justify-content: center;
+    padding-top: 10px;
+    width: 70%;
+    margin: auto;
+}
+
+.grid-layout2 div {
+    background: radial-gradient(#032172, #12529b);
+}
+
+.item1 img {
+    max-width: 100%;
+    margin: 0, auto;
+    padding-right: 40px;
+}
+
+.item2 {
+    color: blanchedalmond;
+    font-size: 25px;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    padding: 5px;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+}
+
+
+
+
+
+
+/*Media Queries*/
+
+@media screen and (max-width: 768px) {
+    body {
+        height: 30vh;
+    }
+}
+
+@media screen and (max-width: 768px) {
+	.grid-layout {
+        grid-template-columns: 1fr;
+      }
+}
+    
+@media screen and (max-width: 768px) {
+    .grid-layout2 {
+        grid-template-columns: 1fr;
+    }
+}
